@@ -1,0 +1,68 @@
+
+
+
+body {
+    background-color: blue;
+}
+
+div {
+    width: 29%;
+    position: relative;
+    float: left;
+    margin: 1%;
+    padding: 1%;
+}
+
+.small {
+    background-color: yellow;
+    font-size: small
+}
+
+.medium {
+    background-color: darkred;
+    font-size: medium
+}
+
+.large {
+    background-color: chartreuse;
+    font-size: large
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-color: green;
+    }
+
+    .small {
+        width: 58%;
+    }
+
+    .medium {
+        width: 29%;
+    }
+
+    .large {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 300px) {
+        body {
+            background-color: red;
+        }
+
+        .small {
+            width: 100%;
+        }
+
+        .medium {
+            width: 100%;
+        }
+
+        .large {
+            width: 100%;
+        }
+    }
+}
+
+
